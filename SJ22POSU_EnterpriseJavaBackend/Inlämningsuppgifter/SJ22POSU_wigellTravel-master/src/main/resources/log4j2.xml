@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO" monitorInterval="30">
+    <Properties>
+        <Property name="LOG_PATTERN">
+            %d{yyyy-MM-dd HH:mm:ss.SSS} %5p ${hostName} --- [%15.15t] %-40.40c{1.} : %m%n%ex
+        </Property>
+    </Properties>
+    <Appenders>
+        <Console name="AppConsoler" target="SYSTEM_OUT" follow="true">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+        </Console>
+        <File name="LogToFile" fileName="logs/app.log" immediateFlush="false" append="false">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+        </File>
+    </Appenders>
+    <Loggers>
+        <Logger name="myLogger" level="INFO" additivity="false">
+            <AppenderRef ref="LogToFile" level="info" />
+            <AppenderRef ref="AppConsoler" />
+        </Logger>
+
+        <Root level="INFO">
+            <AppenderRef ref="LogToFile" />
+            <AppenderRef ref="AppConsoler" />
+        </Root>
+    </Loggers>
+</Configuration>
