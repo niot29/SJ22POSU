@@ -1,0 +1,46 @@
+body {
+    background-color: withe;
+  }
+
+
+h1,h2,h3,h4,h5,h6 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--bs-heading-color);
+    
+  }
+
+ 
+.wigel-headline {
+    background-color: beige;
+    width: 200px;
+    height: 180px;
+    float: left;
+    margin: 50px;
+}
+.wigel-headline-code {
+    background-color: beige;
+    width: 200px;
+    height: 180px;
+    float: left;
+    margin: 50px;
+}
+
+.clear {
+    clear: both;
+}
+
+.wigel-tabel {
+    background-color: aqua;
+}
+
+.wigel-text {
+    background-color: brown;
+    float: right;
+}
+
+table, th, td {
+    border: 1px solid;
+  }
