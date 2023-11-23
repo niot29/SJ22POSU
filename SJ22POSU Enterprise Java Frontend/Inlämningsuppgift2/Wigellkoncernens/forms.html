@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' type='text/css' media='screen' href='reset.css'>
+
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='icons.css'>
+    <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+
+    <title> Style guide Wigellkoncernens </title>
+</head>
+
+<body>
+
+    <nav class="bg-primary">
+        <div class="container clear">
+            <div class="float-left">
+                <h1>Logo</h1>
+            </div>
+            <div class="float-right">
+                <ul class="bg-light-blue">
+                    <li><a href="index.html"> Typografy</a> </li>
+                    <li><a href="button.html"> Buttons</a> </li>
+                    <li><a href="colors.html"> Colors</a> </li>
+                    <li><a href="tables.html"> Tables</a> </li>
+                    <li><a href="forms.html"> Forms</a> </li>
+                    <li><a href="pannel.html"> Pannels</a> </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+    <main>
+
+        <!-----------  START TYPOGRAFY ------>
+        <section id="typografy clear" class="container">
+
+            <!-- -------------- HEADLINES -------------- -->
+            <div class="container">
+                <header class="headline">
+                    <h1><i class="fa-solid fa-angles-left"></i> Typografy</h1>
+                    <h2>Forms</h2>
+                    <p>Simple input and text form, as well as checkbox and selection box</p>
+                </header>
+
+                <div class="card panel pl-large"" >
+                <form>
+                    <div class=" form-contaienter">
+                    <input type="text" class="form-control" id="nameInput" aria-describedby="nameInput"
+                        placeholder="Name">
+
+                </div>
+                <div class="form-contaienter">
+                    <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Email">
+
+                </div>
+
+                <div class="form-contaienter">
+                    <input type="password" class="form-control" id="password" aria-describedby="password"
+                        placeholder="password">
+
+                </div>
+                <div class="form-contaienter form-check">
+                    <input class="checkbox" type="checkbox" value="" id="checkbox">
+                    <label class="checkbox-label" for="checkbox">Check me out</label>
+                </div>
+
+
+                <div class="form-contaienter form-radio">
+                    <input class="radio" type="radio" name="radio" value="option1" checked>
+                    <label class="radio-label" for="radio">Check me out</label>
+                </div>
+
+                <div class="form-contaienter form-radio">
+                    <input class="radio" type="radio" name="radio" value="option2">
+                    <label class="radio-label" for="radio">Check me out</label>
+                </div>
+
+
+                <div class="form-contaienter">
+                    <textarea class="form-check-input" name="textarea" id="exampleRadios2" value="option2"></textarea>
+
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <hr>
+
+            <code class="font-italic"><span>
+            </br>
+                form{</br>
+                    &nbsp;&nbsp; &nbsp;&nbsp; max-width: 800px;</br>
+                }
+            </br>
+                input, textarea, button{</br>
+                   &nbsp;&nbsp; &nbsp;&nbsp; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;</br>
+                   &nbsp;&nbsp; &nbsp;&nbsp; color: rgba(0,0,0,0.6);</br>
+                   &nbsp;&nbsp; &nbsp;&nbsp; font-size: 100%;</br>
+                   &nbsp;&nbsp; &nbsp;&nbsp; font-weight: 500;</br>
+                   &nbsp;&nbsp; &nbsp;&nbsp; letter-spacing: normal;</br>
+                   &nbsp;&nbsp; &nbsp;&nbsp; word-spacing: normal;</br>
+                   &nbsp;&nbsp; &nbsp;&nbsp; text-align: start;</br>
+                   &nbsp;&nbsp; &nbsp;&nbsp; vertical-align: top;</br>
+                   &nbsp;&nbsp; &nbsp;&nbsp; -webkit-transition: all .25s ease-in-out;</br>
+                   &nbsp;&nbsp; &nbsp;&nbsp; -moz-transition: all .25s ease-in-out;</br>
+                   &nbsp;&nbsp; &nbsp;&nbsp; -o-transition: all .25s ease-in-out;</br>
+                   &nbsp;&nbsp; &nbsp;&nbsp; transition: all .25s ease-in-out;</br>
+                   &nbsp;&nbsp; &nbsp;&nbsp; -webkit-border-radius: 3px;</br>
+                   &nbsp;&nbsp; &nbsp;&nbsp; -moz-border-radius: 3px;</br>
+                   &nbsp;&nbsp; &nbsp;&nbsp; -ms-border-radius: 3px;</br>
+                   &nbsp;&nbsp; &nbsp;&nbsp; -o-border-radius: 3px;</br>
+                   &nbsp;&nbsp; &nbsp;&nbsp; border-radius: 3px;</br>
+                   &nbsp;&nbsp; &nbsp;&nbsp; -webkit-font-smoothing: antialiased;</br>
+                }
+            </br></br>
+                input, textarea{</br>
+                   &nbsp;&nbsp; &nbsp;&nbsp; width: 100%;</br>
+                   &nbsp;&nbsp; &nbsp;&nbsp; padding: 10px;</br>
+                   &nbsp;&nbsp; &nbsp;&nbsp; margin-bottom: 10px;</br>
+                   &nbsp;&nbsp; &nbsp;&nbsp; border: 2px solid #ccc;</br>
+                   &nbsp;&nbsp; &nbsp;&nbsp; background-color: #EBEFF2;</br>
+                   &nbsp;&nbsp; &nbsp;&nbsp; text-transform: none;</br>
+                }</br></br>
+                
+                textarea{</br>
+                   &nbsp;&nbsp; &nbsp;&nbsp; resize: vertical;</br>
+                   &nbsp;&nbsp; &nbsp;&nbsp; min-height: 250px;</br>
+                   &nbsp;&nbsp; &nbsp;&nbsp; -webkit-appearance: textfield;</br>
+                   &nbsp;&nbsp; &nbsp;&nbsp; -webkit-rtl-ordering: logical;</br>
+                   &nbsp;&nbsp; &nbsp;&nbsp; -webkit-user-select: text;</br>
+                }
+            </br></br>
+                .form-check, .form-radio {</br>
+                   &nbsp;&nbsp; &nbsp;&nbsp; position: relative;</br>
+                   &nbsp;&nbsp; &nbsp;&nbsp; display: block;</br>
+                   &nbsp;&nbsp; &nbsp;&nbsp; padding-left: 1.25rem;</br>
+                   &nbsp;&nbsp; &nbsp;&nbsp; margin-bottom: 10px;</br>
+                }</br>
+                .checkbox{</br>
+                    &nbsp;&nbsp; &nbsp;&nbsp; position: absolute;</br>
+                }</br>
+                .checkbox, .radio{</br>
+                    &nbsp;&nbsp; &nbsp;&nbsp; width: auto;</br>
+                    &nbsp;&nbsp; &nbsp;&nbsp; margin-left: -1.25rem;</br>
+                }
+            </br>
+                .checkbox-label, .radio-label {</br>
+                    &nbsp;&nbsp; &nbsp;&nbsp;   margin-bottom: 0;</br>
+                }</br>
+                </span>
+            </code>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <footer>
+        <nav class="bg-primary">
+            <div class="container clear">
+                <div class="float-left">
+                    <h1>Logo</h1>
+                </div>
+                <div class="float-right">
+                    <ul class="bg-light-blue">
+                        <li><a href="index.html"> Typografy</a> </li>
+                        <li><a href="button.html"> Buttons</a> </li>
+                        <li><a href="colors.html"> Colors</a> </li>
+                        <li><a href="tables.html"> Tables</a> </li>
+                        <li><a href="forms.html"> Forms</a> </li>
+                        <li><a href="pannel.html"> Pannels</a> </li>
+                        <li><a href="pageload.html"> Laddningsindikator</a> </li>
+    
+                    </ul>
+                </div>
+            </div>
+    
+        </nav>
+    </footer>
+</body>
+
+</html>
