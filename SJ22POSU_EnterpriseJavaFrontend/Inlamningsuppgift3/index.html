@@ -29,51 +29,54 @@
                     <p>Do not pres the buttoms</p>
                 </header>
 
-                <button onclick="firelarm.play()" type="button" class="btn btn-warning   "><i
+                <div id="alermsg" class="alert alert-warning fade-out" role="alert">
+                    A simple secondary alert—check it out!
+                </div>
+
+                <button id="btnn1" onclick="firelarm()" type="button" class="btn btn-warning"><i
                         class="fa-solid fa-fire-extinguisher"></i> Brandlarm</button>
-                <button onmousedown="thieflarm.play()" type="button" class="btn btn-dark white "><i
+                <button id="btnn2" onmousedown="thieflarm()" type="button" class="btn btn-dark white"><i
                         class="fa-solid fa-user-ninja"></i> Tjuvlarm</button>
-                <button onmousedown="thieflarm.play();firelarm.play()" type="button" class="btn btn-danger "><i
+                <button id="btnn3" onmousedown="larm()" type="button" class="btn btn-danger "><i
                         class="fa-solid fa-fire-extinguisher"></i> <i class="fa-solid fa-user-ninja"></i>
                     Danger</button>
-            
+
 
                 <hr>
 
                 <header class="headline">
                     <h1><i class="fa-solid fa-unlock"></i></i> Buttom</h1>
                     <h2>Activate larm</h2>
-                    <p>Add PIN for activat and inactivar the larm with PIN </p>
+                    <p>Use PIN:
+                    <h3><b>1qaz</b></h3> for activat and inactivar the larm with PIN </p>
                 </header>
 
 
 
-                <div class="container"> 
+                <div id="pinform" class="container">
                     <form action="">
-                        <input class="input" type="text" 
-                            inputmode="numeric" maxlength="1" /> 
-                        <input class="input" type="text" 
-                            inputmode="numeric" maxlength="1" /> 
-                        <input class="input" type="text" 
-                            inputmode="numeric" maxlength="1" /> 
-                        <input class="input" type="text" 
-                            inputmode="numeric" maxlength="1" /> 
+                        <input class="input" type="text" inputmode="numeric" maxlength="1" />
+                        <input class="input" type="text" inputmode="numeric" maxlength="1" />
+                        <input class="input" type="text" inputmode="numeric" maxlength="1" />
+                        <input class="input" type="text" inputmode="numeric" maxlength="1" />
                     </form>
-                        
-                     
-                </div> 
 
+                </div>
 
-                </ul>
+                <div>
+                    <div  id="log" class="alert alert-info" role="alert">
+                       
+                    </div>
+                      
+                    
+                </div>
 
-
-            </div>
         </section>
 
     </main>
 
 
- 
+
 
 </body>
 
