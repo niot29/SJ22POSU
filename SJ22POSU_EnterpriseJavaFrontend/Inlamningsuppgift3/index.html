@@ -29,19 +29,23 @@
                     <p>Do not pres the buttoms</p>
                 </header>
 
-                <div id="alermsg" class="alert alert-warning fade-out" role="alert">
-                    A simple secondary alert—check it out!
+                <div id="alermsg-warning" class="alert alert-warning" style="opacity:0;" role="alert">
+                    Wrong PIN code
                 </div>
+                <div id="alermsg-success" class="alert alert-success" style="opacity:0;" role="alert">
+                    Correct PIN code
+                </div>
+                
+                <div id="setpin">
+                    <button id="btnn1" onclick="firelarm()" type="button" class="btn btn-warning"><i
+                            class="fa-solid fa-fire-extinguisher"></i> Brandlarm</button>
+                    <button id="btnn2" onmousedown="thieflarm()" type="button" class="btn btn-dark white"><i
+                            class="fa-solid fa-user-ninja"></i> Tjuvlarm</button>
+                    <button id="btnn3" onmousedown="larm()" type="button" class="btn btn-danger "><i
+                            class="fa-solid fa-fire-extinguisher"></i> <i class="fa-solid fa-user-ninja"></i>
+                        Danger</button>
 
-                <button id="btnn1" onclick="firelarm()" type="button" class="btn btn-warning"><i
-                        class="fa-solid fa-fire-extinguisher"></i> Brandlarm</button>
-                <button id="btnn2" onmousedown="thieflarm()" type="button" class="btn btn-dark white"><i
-                        class="fa-solid fa-user-ninja"></i> Tjuvlarm</button>
-                <button id="btnn3" onmousedown="larm()" type="button" class="btn btn-danger "><i
-                        class="fa-solid fa-fire-extinguisher"></i> <i class="fa-solid fa-user-ninja"></i>
-                    Danger</button>
-
-
+                </div>
                 <hr>
 
                 <header class="headline">
@@ -49,8 +53,7 @@
                     <h2>Activate larm</h2>
                     <p>Use PIN:
                     <h3><b>1qaz</b></h3> for activat and inactivar the larm with PIN </p>
-                </header>
-
+                </header> <br>
 
 
                 <div id="pinform" class="container">
@@ -64,11 +67,11 @@
                 </div>
 
                 <div>
-                    <div  id="log" class="alert alert-info" role="alert">
-                       
+                    <div id="log" class="alert alert-info" role="alert">
+
                     </div>
-                      
-                    
+
+
                 </div>
 
         </section>
