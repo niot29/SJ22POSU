@@ -1,0 +1,69 @@
+2024-01-21 11:25:06.980  INFO DESKTOP-11EI7JO --- [kground-preinit] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 8.0.1.Final
+2024-01-21 11:25:07.024  INFO DESKTOP-11EI7JO --- [  restartedMain] s.w.w.WtravelsApplication                : Starting WtravelsApplication using Java 17.0.8 with PID 25824 (D:\#Devoloper\YRKA\SJ22POSU\SJ22POSU_EnterpriseJavaFrontend\Projektarbete\SJ22POSU_wigellTravel-master\target\classes started by niot in D:\#Devoloper\YRKA\SJ22POSU\SJ22POSU_EnterpriseJavaFrontend\Projektarbete\SJ22POSU_wigellTravel-master)
+2024-01-21 11:25:07.029  INFO DESKTOP-11EI7JO --- [  restartedMain] s.w.w.WtravelsApplication                : No active profile set, falling back to 1 default profile: "default"
+2024-01-21 11:25:07.082  INFO DESKTOP-11EI7JO --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-21 11:25:07.083  INFO DESKTOP-11EI7JO --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-21 11:25:07.829  INFO DESKTOP-11EI7JO --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-21 11:25:07.994  INFO DESKTOP-11EI7JO --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 157 ms. Found 3 JPA repository interfaces.
+2024-01-21 11:25:08.670  INFO DESKTOP-11EI7JO --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8585 (http)
+2024-01-21 11:25:08.680  INFO DESKTOP-11EI7JO --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8585"]
+2024-01-21 11:25:08.682  INFO DESKTOP-11EI7JO --- [  restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2024-01-21 11:25:08.683  INFO DESKTOP-11EI7JO --- [  restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2024-01-21 11:25:08.749  INFO DESKTOP-11EI7JO --- [  restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2024-01-21 11:25:08.750  INFO DESKTOP-11EI7JO --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1667 ms
+2024-01-21 11:25:08.793  INFO DESKTOP-11EI7JO --- [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2024-01-21 11:25:09.012  INFO DESKTOP-11EI7JO --- [  restartedMain] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:membersdb user=SA
+2024-01-21 11:25:09.014  INFO DESKTOP-11EI7JO --- [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2024-01-21 11:25:09.027  INFO DESKTOP-11EI7JO --- [  restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:membersdb'
+2024-01-21 11:25:09.150  INFO DESKTOP-11EI7JO --- [  restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-21 11:25:09.215  INFO DESKTOP-11EI7JO --- [  restartedMain] o.h.Version                              : HHH000412: Hibernate ORM core version 6.2.9.Final
+2024-01-21 11:25:09.220  INFO DESKTOP-11EI7JO --- [  restartedMain] o.h.c.Environment                        : HHH000406: Using bytecode reflection optimizer
+2024-01-21 11:25:09.381  INFO DESKTOP-11EI7JO --- [  restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-01-21 11:25:09.512  INFO DESKTOP-11EI7JO --- [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-21 11:25:09.778  INFO DESKTOP-11EI7JO --- [  restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-01-21 11:25:10.595  INFO DESKTOP-11EI7JO --- [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-01-21 11:25:10.665  INFO DESKTOP-11EI7JO --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-21 11:25:11.489  WARN DESKTOP-11EI7JO --- [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-21 11:25:11.824  INFO DESKTOP-11EI7JO --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-01-21 11:25:11.842  INFO DESKTOP-11EI7JO --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8585"]
+2024-01-21 11:25:11.858  INFO DESKTOP-11EI7JO --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8585 (http) with context path ''
+2024-01-21 11:25:11.867  INFO DESKTOP-11EI7JO --- [  restartedMain] s.w.w.WtravelsApplication                : Started WtravelsApplication in 5.273 seconds (process running for 6.556)
+2024-01-21 11:25:11.869  INFO DESKTOP-11EI7JO --- [  restartedMain] s.w.w.WtravelsApplication                : Create Admini User: admin
+2024-01-21 11:25:11.875  INFO DESKTOP-11EI7JO --- [  restartedMain] s.w.w.s.CustomerServices                 : -- Service -- addCutomer: Save cutomer info and return id
+2024-01-21 11:25:11.875  INFO DESKTOP-11EI7JO --- [  restartedMain] s.w.w.s.CustomerServices                 : -- Service -- addCutomer: As default will set Customer status ti active
+2024-01-21 11:25:11.876  INFO DESKTOP-11EI7JO --- [  restartedMain] s.w.w.s.CustomerServices                 : -- Service -- getToDayDateReturnAsString: Get today date
+2024-01-21 11:25:11.876  INFO DESKTOP-11EI7JO --- [  restartedMain] s.w.w.s.CustomerServices                 : -- Service -- passwordHandler: ???? Mayby handler user password ..?
+2024-01-21 11:25:11.974  INFO DESKTOP-11EI7JO --- [  restartedMain] s.w.w.s.CustomerServices                 : -- Service -- addCutomer: Save cutomer info and return id
+2024-01-21 11:25:11.974  INFO DESKTOP-11EI7JO --- [  restartedMain] s.w.w.s.CustomerServices                 : -- Service -- addCutomer: As default will set Customer status ti active
+2024-01-21 11:25:11.974  INFO DESKTOP-11EI7JO --- [  restartedMain] s.w.w.s.CustomerServices                 : -- Service -- getToDayDateReturnAsString: Get today date
+2024-01-21 11:25:11.974  INFO DESKTOP-11EI7JO --- [  restartedMain] s.w.w.s.CustomerServices                 : -- Service -- passwordHandler: ???? Mayby handler user password ..?
+2024-01-21 11:25:11.980  INFO DESKTOP-11EI7JO --- [  restartedMain] s.w.w.s.CustomerServices                 : -- Service -- addCutomer: Save cutomer info and return id
+2024-01-21 11:25:11.980  INFO DESKTOP-11EI7JO --- [  restartedMain] s.w.w.s.CustomerServices                 : -- Service -- addCutomer: As default will set Customer status ti active
+2024-01-21 11:25:11.980  INFO DESKTOP-11EI7JO --- [  restartedMain] s.w.w.s.CustomerServices                 : -- Service -- getToDayDateReturnAsString: Get today date
+2024-01-21 11:25:11.981  INFO DESKTOP-11EI7JO --- [  restartedMain] s.w.w.s.CustomerServices                 : -- Service -- passwordHandler: ???? Mayby handler user password ..?
+2024-01-21 11:25:11.985  INFO DESKTOP-11EI7JO --- [  restartedMain] s.w.w.s.CustomerServices                 : -- Service -- addCutomer: Save cutomer info and return id
+2024-01-21 11:25:11.985  INFO DESKTOP-11EI7JO --- [  restartedMain] s.w.w.s.CustomerServices                 : -- Service -- addCutomer: As default will set Customer status ti active
+2024-01-21 11:25:11.986  INFO DESKTOP-11EI7JO --- [  restartedMain] s.w.w.s.CustomerServices                 : -- Service -- getToDayDateReturnAsString: Get today date
+2024-01-21 11:25:11.986  INFO DESKTOP-11EI7JO --- [  restartedMain] s.w.w.s.CustomerServices                 : -- Service -- passwordHandler: ???? Mayby handler user password ..?
+2024-01-21 11:25:11.992  INFO DESKTOP-11EI7JO --- [  restartedMain] s.w.w.s.CustomerServices                 : -- Service -- addCutomer: Save cutomer info and return id
+2024-01-21 11:25:11.992  INFO DESKTOP-11EI7JO --- [  restartedMain] s.w.w.s.CustomerServices                 : -- Service -- addCutomer: As default will set Customer status ti active
+2024-01-21 11:25:11.992  INFO DESKTOP-11EI7JO --- [  restartedMain] s.w.w.s.CustomerServices                 : -- Service -- getToDayDateReturnAsString: Get today date
+2024-01-21 11:25:11.992  INFO DESKTOP-11EI7JO --- [  restartedMain] s.w.w.s.CustomerServices                 : -- Service -- passwordHandler: ???? Mayby handler user password ..?
+2024-01-21 11:25:11.996  INFO DESKTOP-11EI7JO --- [  restartedMain] s.w.w.s.CustomerServices                 : -- Service -- addCutomer: Save cutomer info and return id
+2024-01-21 11:25:11.996  INFO DESKTOP-11EI7JO --- [  restartedMain] s.w.w.s.CustomerServices                 : -- Service -- addCutomer: As default will set Customer status ti active
+2024-01-21 11:25:11.996  INFO DESKTOP-11EI7JO --- [  restartedMain] s.w.w.s.CustomerServices                 : -- Service -- getToDayDateReturnAsString: Get today date
+2024-01-21 11:25:11.997  INFO DESKTOP-11EI7JO --- [  restartedMain] s.w.w.s.CustomerServices                 : -- Service -- passwordHandler: ???? Mayby handler user password ..?
+2024-01-21 11:25:12.000  INFO DESKTOP-11EI7JO --- [  restartedMain] s.w.w.s.DestinationServices              : -- Service -- addNewDestination: Save destination info and return id
+2024-01-21 11:25:12.004  INFO DESKTOP-11EI7JO --- [  restartedMain] s.w.w.s.DestinationServices              : -- Service -- addNewDestination: Save destination info and return id
+2024-01-21 11:25:12.008  INFO DESKTOP-11EI7JO --- [  restartedMain] s.w.w.s.DestinationServices              : -- Service -- addNewDestination: Save destination info and return id
+2024-01-21 11:25:12.010  INFO DESKTOP-11EI7JO --- [  restartedMain] s.w.w.s.DestinationServices              : -- Service -- addNewDestination: Save destination info and return id
+2024-01-21 11:25:12.013  INFO DESKTOP-11EI7JO --- [  restartedMain] s.w.w.s.DestinationServices              : -- Service -- addNewDestination: Save destination info and return id
+2024-01-21 11:25:15.363  INFO DESKTOP-11EI7JO --- [nio-8585-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-21 11:25:15.364  INFO DESKTOP-11EI7JO --- [nio-8585-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2024-01-21 11:25:15.365  INFO DESKTOP-11EI7JO --- [nio-8585-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2024-01-21 11:25:15.401  INFO DESKTOP-11EI7JO --- [nio-8585-exec-1] s.w.w.c.CutomserController               : -- Controller -- listAllDestination: find all cutomer from Service
+2024-01-21 11:25:15.404  INFO DESKTOP-11EI7JO --- [nio-8585-exec-1] s.w.w.s.DestinationServices              : -- Service -- findAllDestination: find all destination from db
+2024-01-21 11:25:55.783  INFO DESKTOP-11EI7JO --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-21 11:25:56.185  WARN DESKTOP-11EI7JO --- [ionShutdownHook] o.s.b.f.s.DisposableBeanAdapter          : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2024-01-21 11:25:56.186  INFO DESKTOP-11EI7JO --- [ionShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2024-01-21 11:25:56.218  INFO DESKTOP-11EI7JO --- [ionShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
