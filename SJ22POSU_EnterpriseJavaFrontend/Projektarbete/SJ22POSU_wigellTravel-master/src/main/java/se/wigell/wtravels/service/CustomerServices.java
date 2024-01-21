@@ -62,6 +62,7 @@ public class CustomerServices {
         authEntity.setLoginStatus(1);
         authEntity.setLoginCreateDate(getToDayDateReturnAsString());
         authEntity.setLoginPassword(passwordHandler());
+        authEntity.setLoginRole(customer.getAuthEntity().getLoginRole());
         customer.setAuthEntity(authEntity);
 
         return customerRepository.saveAndFlush(customer).getId();

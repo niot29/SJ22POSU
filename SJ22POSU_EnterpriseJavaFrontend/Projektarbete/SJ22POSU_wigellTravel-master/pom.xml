@@ -31,7 +31,12 @@
                 </exclusion>
             </exclusions>
         </dependency>
-
+        <!-- https://spring.io/security/cve-2023-34035 (6.1.x users should upgrade to 6.1.2)
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+        -->
         <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-webflux -->
         <dependency>
             <groupId>org.springframework.boot</groupId>

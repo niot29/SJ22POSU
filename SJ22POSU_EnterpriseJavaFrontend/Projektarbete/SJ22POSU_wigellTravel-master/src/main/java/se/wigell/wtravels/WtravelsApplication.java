@@ -8,9 +8,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import se.wigell.wtravels.controller.CutomserController;
-import se.wigell.wtravels.entity.AddressEntity;
-import se.wigell.wtravels.entity.CustomerEntity;
-import se.wigell.wtravels.entity.DestinationEntity;
+import se.wigell.wtravels.entity.*;
 import se.wigell.wtravels.service.CustomerServices;
 import se.wigell.wtravels.service.DestinationServices;
 
@@ -32,13 +30,24 @@ public class WtravelsApplication {
 	}
 	private void createCutomer(CustomerServices customerServices) {
 		CustomerEntity customer = new CustomerEntity("admin","Admin","Administrator","a.a@a.com","123456789","2022",1);
-		logger.info("Create Admini User: " + customer.getUserName());
+		RolsEnum rolsEnum = RolsEnum.ADMIN;
+		AuthEntity authEntity = new AuthEntity();
+		authEntity.setLoginRole(rolsEnum);
+		customer.setAuthEntity(authEntity);
+		logger.info("Create Admini User: " + customer.getAuthEntity());
 		customerServices.addCutomer(customer);
 
 		for (int i = 0 ; i < 5 ; i++){
 			CustomerEntity loopMembers = new CustomerEntity("Anv0" + i,"Kungen0" + i,"LanstName" + i,"0" + i + "@nowhere.du","123456789" + i,"2023-11-0" + i,1);
 			AddressEntity addressEntity = new AddressEntity("AnkeBorg01" +i, 12312, "Stockholm","swe");
+
+			RolsEnum userRole = RolsEnum.USER;
+			AuthEntity authUserEntity = new AuthEntity();
+			authUserEntity.setLoginRole(userRole);
+
 			loopMembers.setCutomer_address(addressEntity);
+			loopMembers.setAuthEntity(authUserEntity);
+			logger.info("Create Admini User: " + loopMembers.getAuthEntity());
 			customerServices.addCutomer(loopMembers);
 		}
 	}

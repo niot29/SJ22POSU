@@ -57,7 +57,6 @@ public class CustomerEntity {
     }
 
 
-
     public CustomerEntity(String userName, String firstName, String lastName, String email, String phone, String dateOfBirth, int cutomerStatus) {
         this.userName = userName;
         this.firstName = firstName;

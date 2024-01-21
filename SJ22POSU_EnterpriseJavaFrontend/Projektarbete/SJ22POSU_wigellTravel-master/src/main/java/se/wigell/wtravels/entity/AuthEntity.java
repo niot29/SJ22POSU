@@ -22,20 +22,21 @@ public class AuthEntity {
     private String loginCreateDate;
     @Column(name = "login_LastDate")
     private String loginLastLogin;
-
+    @Column(name = "login_Role", nullable = false)
+    private Enum loginRole;
     @Column(name = "login_Status", nullable = false)
     private int loginStatus;
-    @ManyToOne(cascade = {CascadeType.ALL})
-    private AuthRolsEntity role;
+
 
     public AuthEntity() {
     }
 
-    public AuthEntity(String loginNamne, String loginPassword, String loginCreateDate, String loginLastLogin, int loginStatus) {
+    public AuthEntity(String loginNamne, String loginPassword, String loginCreateDate, String loginLastLogin, Enum loginRole, int loginStatus) {
         this.loginNamne = loginNamne;
         this.loginPassword = loginPassword;
         this.loginCreateDate = loginCreateDate;
         this.loginLastLogin = loginLastLogin;
+        this.loginRole = loginRole;
         this.loginStatus = loginStatus;
     }
 
@@ -63,14 +64,6 @@ public class AuthEntity {
         this.loginPassword = loginPassword;
     }
 
-    public AuthRolsEntity getRole() {
-        return role;
-    }
-
-    public void setRole(AuthRolsEntity role) {
-        this.role = role;
-    }
-
     public String getLoginCreateDate() {
         return loginCreateDate;
     }
@@ -95,6 +88,14 @@ public class AuthEntity {
         this.loginStatus = loginStatus;
     }
 
+    public Enum getLoginRole() {
+        return loginRole;
+    }
+
+    public void setLoginRole(Enum loginRole) {
+        this.loginRole = loginRole;
+    }
+
     @Override
     public String toString() {
         return "AuthEntity{" +
@@ -103,8 +104,8 @@ public class AuthEntity {
                 ", loginPassword='" + loginPassword + '\'' +
                 ", loginCreateDate='" + loginCreateDate + '\'' +
                 ", loginLastLogin='" + loginLastLogin + '\'' +
+                ", loginRole='" + loginRole + '\'' +
                 ", loginStatus=" + loginStatus +
-                ", role=" + role +
                 '}';
     }
 }

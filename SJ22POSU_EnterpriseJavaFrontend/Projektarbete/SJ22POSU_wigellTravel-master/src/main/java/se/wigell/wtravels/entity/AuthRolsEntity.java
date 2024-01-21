@@ -20,6 +20,10 @@ public class AuthRolsEntity {
 
     public AuthRolsEntity(String id, String role) {
         this.id = id;
+
+    }
+
+    public AuthRolsEntity(String role) {
         this.role = role;
     }
 
