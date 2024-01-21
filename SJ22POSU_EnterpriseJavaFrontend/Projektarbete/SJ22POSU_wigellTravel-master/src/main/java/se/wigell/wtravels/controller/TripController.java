@@ -29,10 +29,20 @@ public class TripController {
     }
 
     @GetMapping
-    public ResponseEntity<List<DestinationEntity>> listAllTrips() {
+    public ResponseEntity<List<DestinationEntity>> listAllTrips(@RequestParam (value = "search", required = false, defaultValue = "") String search) {
         logger.info("-- Controller -- listAllTrips: find all cutomer from Service");
-        return new ResponseEntity<>(destinationServices.findAllDestination(), HttpStatus.OK);
+
+        if(!search.isEmpty() || !search.isBlank()){
+            System.out.println("seach not null:" + search);
+            return new ResponseEntity<>(destinationServices.findAllDestinationBySearch(search), HttpStatus.OK);
+        }else {
+            return new ResponseEntity<>(destinationServices.findAllDestination(), HttpStatus.OK);
+        }
+
     }
+
+
+
     @GetMapping("/{tripId}")
     public ResponseEntity<BookingEntity> getTripByBookingId(@PathVariable Long tripId){
         logger.info("-- Controller -- getTripByBookingId: List  booking that have ID: " + tripId);

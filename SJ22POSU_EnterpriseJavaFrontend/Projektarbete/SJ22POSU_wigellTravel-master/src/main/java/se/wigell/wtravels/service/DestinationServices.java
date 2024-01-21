@@ -27,6 +27,11 @@ public class DestinationServices {
         return destinationRepository.findAll();
     }
 
+    public List<DestinationEntity> findAllDestinationBySearch(String searchString) {
+        logger.info("-- Service -- findAllDestinationBySearch: find all destination from db");
+        return destinationRepository.findByDestHotelNamn(searchString);
+    }
+
     @Transactional
     public Long addNewDestination(DestinationEntity destinationEntity){
         logger.info("-- Service -- addNewDestination: Save destination info and return id");
@@ -65,4 +70,6 @@ public class DestinationServices {
         destination.setDestination_address_id(destAddress);
         return destinationRepository.save(destination);
     }
+
+
 }
