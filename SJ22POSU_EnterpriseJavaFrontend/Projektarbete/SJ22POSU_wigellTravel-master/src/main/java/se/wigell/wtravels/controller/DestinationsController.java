@@ -13,7 +13,7 @@ import se.wigell.wtravels.service.DestinationServices;
 
 import java.util.List;
 
-@Controller
+@RestController
 @RequestMapping("/api/v1/destinations")
 public class DestinationsController {
     private static final Logger logger = LogManager.getLogger(CutomserController.class);

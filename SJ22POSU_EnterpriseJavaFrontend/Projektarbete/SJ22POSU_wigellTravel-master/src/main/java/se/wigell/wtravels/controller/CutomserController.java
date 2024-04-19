@@ -13,7 +13,7 @@ import se.wigell.wtravels.service.CustomerServices;
 
 import java.util.List;
 
-@Controller
+@RestController
 @RequestMapping("/api/v1/customers")
 public class CutomserController {
     private static final Logger logger = LogManager.getLogger(CutomserController.class);
