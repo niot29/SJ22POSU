@@ -10,6 +10,7 @@ import se.wigell.wtravels.service.CurrencyService;
 
 @RestController
 @RequestMapping("/")
+@CrossOrigin("http://localhost:3000")
 public class RootPathController {
     private static final Logger logger =  LogManager.getLogger(RootPathController.class);
     CurrencyService currencyService;

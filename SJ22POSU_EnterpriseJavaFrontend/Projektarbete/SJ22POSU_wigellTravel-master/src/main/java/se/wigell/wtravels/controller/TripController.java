@@ -18,6 +18,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1/trips")
+@CrossOrigin("http://localhost:3000")
 public class TripController {
     private static final Logger logger =  LogManager.getLogger(TripController.class);
     private final DestinationServices destinationServices;
