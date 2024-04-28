@@ -1,0 +1,6 @@
+FROM openjdk
+LABEL maintainer="Nils Ottosson"
+WORKDIR /app
+COPY D:/wtravels-0.0.1-SNAPSHOT.jar /app/wtravels-0.0.1-SNAPSHOT.jar
+RUN java -jar /app/wtravels-0.0.1-SNAPSHOT.jar
+CMD ["/bin/bash"]
